@@ -1,0 +1,52 @@
+https://keybase.io/keur
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://keur.rocks
+  * I am keur (https://keybase.io/keur) on keybase.
+  * I have a public key ASCwIrgEwaOReZQWhjafSaZ1ooPNlx5j0Imrqvs93B3wVgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101abc78062987fe000fce6d883f100fd0fb8ca84cef523bf4c60942098d38b22670a",
+      "host": "keybase.io",
+      "kid": "0120b022b804c1a39179941686369f49a675a283cd971e63d089abaafb3ddc1df0560a",
+      "uid": "da7f4435667eda7727658a68c32f6719",
+      "username": "keur"
+    },
+    "merkle_root": {
+      "ctime": 1519714171,
+      "hash": "c4ae6e2fc41f71eeb07a8dcf87b6f21e62e9f939ccf781d2b5cd6f4b44ffcdef1e6e74dacbe00f0f566456a1177a839cbd6b667338d1824e1948bd65bc1b95ce",
+      "hash_meta": "d8ce8da95745f84b3e0e9fcc50186bd32cd07efca0eee2f4b52571dd4b84bbb2",
+      "seqno": 2158447
+    },
+    "service": {
+      "hostname": "keur.rocks",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.39"
+  },
+  "ctime": 1519714075,
+  "expire_in": 504576000,
+  "prev": "6b792130a6d507954cf78897f0ed56e54b242d8328a4fa41ed96b9bf52c1bfe0",
+  "seqno": 32,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgsCK4BMGjkXmUFoY2n0mmdaKDzZceY9CJq6r7Pdwd8FYKp3BheWxvYWTFAz97ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxYWJjNzgwNjI5ODdmZTAwMGZjZTZkODgzZjEwMGZkMGZiOGNhODRjZWY1MjNiZjRjNjA5NDIwOThkMzhiMjI2NzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwYjAyMmI4MDRjMWEzOTE3OTk0MTY4NjM2OWY0OWE2NzVhMjgzY2Q5NzFlNjNkMDg5YWJhYWZiM2RkYzFkZjA1NjBhIiwidWlkIjoiZGE3ZjQ0MzU2NjdlZGE3NzI3NjU4YTY4YzMyZjY3MTkiLCJ1c2VybmFtZSI6ImtldXIifSwibWVya2xlX3Jvb3QiOnsiY3RpbWUiOjE1MTk3MTQxNzEsImhhc2giOiJjNGFlNmUyZmM0MWY3MWVlYjA3YThkY2Y4N2I2ZjIxZTYyZTlmOTM5Y2NmNzgxZDJiNWNkNmY0YjQ0ZmZjZGVmMWU2ZTc0ZGFjYmUwMGYwZjU2NjQ1NmExMTc3YTgzOWNiZDZiNjY3MzM4ZDE4MjRlMTk0OGJkNjViYzFiOTVjZSIsImhhc2hfbWV0YSI6ImQ4Y2U4ZGE5NTc0NWY4NGIzZTBlOWZjYzUwMTg2YmQzMmNkMDdlZmNhMGVlZTJmNGI1MjU3MWRkNGI4NGJiYjIiLCJzZXFubyI6MjE1ODQ0N30sInNlcnZpY2UiOnsiaG9zdG5hbWUiOiJrZXVyLnJvY2tzIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMzkifSwiY3RpbWUiOjE1MTk3MTQwNzUsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJwcmV2IjoiNmI3OTIxMzBhNmQ1MDc5NTRjZjc4ODk3ZjBlZDU2ZTU0YjI0MmQ4MzI4YTRmYTQxZWQ5NmI5YmY1MmMxYmZlMCIsInNlcW5vIjozMiwidGFnIjoic2lnbmF0dXJlIn2jc2lnxEDrx28ypk/QvcjB1DGtReCyXO1DjviwbQKhdnz/qnzfqxQXh0v2TY+Qdm/FgCbw7x1qRuBQeY2/aedlqnyV5J8JqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgjBWLSd01UjEDw0UXyF+txJtW3/6dQjoWrJSXazSHIbOjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/keur

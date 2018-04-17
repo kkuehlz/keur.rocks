@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- Note to self: username: joan, password:_.qF)!dLs9%MW -->
+<html>
+<head>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.1/particles.min.js"></script>
+    <link rel="icon" type="image/jpg" href="hosaka.jpg">
+    <title>c o m f y</title>
+    <style>
+        html {
+	    height:100%;
+ 	    overflow:hidden;
+	}
+        body {
+	    height:100%;
+	    margin-left: 2em;
+	    background-color:black;
+	    background-repeat:no-repeat;
+	    z-index: -1;
+            color: white;
+            font: 16px "blockfont", Verdana, sans-serif;
+        }
+
+	.pink {
+	    color: #CF41AE;
+	}
+
+	a {
+	    color: #CF41AE;
+	}
+
+	a:visited {
+	    color: #553DA3;
+	}
+
+	ul {
+	    list-style-position: inside;
+	    padding-left:0;
+	}
+
+	div {
+            -webkit-font-smoothing : none;
+	    font-family: monospace;
+ 	}
+
+	#pixel_alt {
+	    width: 100%;
+	    max-width: 800px;
+	}
+
+	#cat {
+	    position:absolute;
+ 	    left:0;
+	    height:60px;
+	    -webkit-filter: hue-rotate(90deg);
+	    filter: hue-rotate(90deg);
+	}
+
+	#poof {
+	    visibility: hidden;
+	}
+
+	.footer {
+            /*background-color:red; */
+            position:fixed;
+            bottom:0px;
+            left:0px;
+            right:0px;
+            height:63px;
+            margin-bottom:0px;
+	    z-index:10;
+	}
+
+	@media screen and (max-width: 460px) {
+	    body {
+	        margin-left: 1em;
+		font-size:smaller;
+	    }
+
+	    .footer {
+                height:42px;
+	    }
+
+	    #cat {
+	        height:40px;
+	    }
+	}
+    </style>
+</head>
+<body>
+    <div id="particles-js">
+    <img id="pixel_alt" alt="blade runner pixel art" src="blade_runner_pixel.gif"/>
+    <div id="container">
+        <br>
+	<h3><span class="pink">[</span>Contact<span class="pink">]</span></h3>
+	<ul id="contact">
+	    <li>E-mail : kkuehler at berkeley dot edu</li>
+	    <li>OCF &nbsp;&nbsp;&nbsp;: keur at ocf dot berkeley dot edu</li>
+	    <li>PGP &nbsp;&nbsp;&nbsp;: <span class="cypher">4C7C 7B63 9A6A 7DE9 1FCB 911B 4FEE AB42 C76F 3BD8</span> (<a href="https://keybase.io/keur/pgp_keys.asc?fingerprint=4c7c7b639a6a7de91fcb911b4feeab42c76f3bd8">download</a>)</li>
+	    <li>Github : <a href="https://github.com/kkuehler">@kkuehler</a></li>
+	    <li>Music &nbsp;: <a href="https://soundcloud.com/beniceandsettledown">SoundCloud</a></li>
+	</ul>
+    </div>
+    <div class="footer">
+        <img id="cat" alt="walking cat" src="cat.gif"/>
+        <audio autoplay loop id="song">
+            <source src="layer_cake.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+  </div>
+<script>
+$(function() {
+  particlesJS("particles-js", {"particles":{"number":{"value":101,"density":{"enable":true,"value_area":881.8766334760375}},"color":{"value":"#cccccc"},"shape":{"type":"circle","stroke":{"width":0,"color":"#000000"},"polygon":{"nb_sides":5},"image":{"src":"img/github.svg","width":100,"height":100}},"opacity":{"value":0.10,"random":false,"anim":{"enable":false,"speed":1,"opacity_min":0.1,"sync":false}},"size":{"value":3,"random":true,"anim":{"enable":false,"speed":40,"size_min":0.1,"sync":false}},"line_linked":{"enable":true,"distance":150,"color":"#cccccc","opacity":0.06,"width":1},"move":{"enable":true,"speed":2.2,"direction":"none","random":false,"straight":false,"out_mode":"out","bounce":false,"attract":{"enable":false,"rotateX":600,"rotateY":1200}}},"interactivity":{"detect_on":"window","events":{"onhover":{"enable":false,"mode":"repulse"},"onclick":{"enable":false,"mode":"push"},"resize":true},"modes":{"grab":{"distance":400,"line_linked":{"opacity":1}},"bubble":{"distance":400,"size":40,"duration":2,"opacity":8,"speed":3},"repulse":{"distance":200,"duration":0.4},"push":{"particles_nb":4},"remove":{"particles_nb":2}}},"retina_detect":true});
+});
+</script>
+<script>
+    $(document).ready(function(e) {
+      function walk() {
+	$("#cat").css({
+	  "left":0,
+	  "visibility":"visible",
+	});
+        var width = $(document).width() - $("#cat").width() *1.65;
+        $("#cat").animate({
+          left: width
+        }, 7500, 'linear', function() {
+	  $("#cat").css("visibility", "hidden")
+	  setTimeout(walk, 500);
+        });
+      }
+      $("#cat").click(function() {
+	// destroy kitteh
+        $("#cat").attr('src', 'poof.gif');
+        $("#cat").stop();
+        setTimeout(function() {
+	  // respawn
+          $("#cat").attr('src', 'cat.gif');
+	  $("#cat").css("visibility", "hidden")
+	  setTimeout(walk, 750);
+        }, 700);
+      });
+      walk();
+    });
+</script>
+<script>
+    document.getElementById("song").volume = 0.3
+</script>
+</body>
+</html>
